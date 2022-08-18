@@ -49,6 +49,7 @@ else if(jugador == 3 && pc == 3){
 }
 }
 
-alert("PC elige: " + eleccion(pc))
 alert("Tu eliges: " + eleccion(jugador))
+alert("PC elige: " + eleccion(pc))
+
 combate()
