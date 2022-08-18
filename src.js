@@ -1,5 +1,5 @@
 let pc = aleatoriedad(1, 3);
-let jugador = prompt("Elije: \n 1 para piedra \n 2 para papel \n 3 para tijera");
+let jugador = prompt("Elije: \n 1 para piedra ✊🏻 \n 2 para papel ✋🏻 \n 3 para tijera ✌🏻");
 //alert("Elejiste " + jugador)
 function aleatoriedad(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min)
