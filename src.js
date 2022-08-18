@@ -4,30 +4,22 @@ let jugador = prompt("Elije: \n 1 para piedra \n 2 para papel \n 3 para tijera")
 function aleatoriedad(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
-function eleccionjug(){
-if(jugador == 1){
-    alert("Elejiste piedra ✊🏻")
-}
-else if(jugador == 2){
-    alert("Elejiste papel ✋🏻")
-}
-else if(jugador == 3){
-    alert("Elejiste tijera ✌🏻")
-}
-else{
-    alert("Elejiste perder")
-}
-}
-function eleccionpc(){
-if(pc == 1){
-    alert("PC eligio piedra ✊🏻")
-}
-else if (pc == 2){
-    alert("PC eligio papel ✋🏻")
-}
-else if(pc == 3){
-    alert("PC eligio tijera ✌🏻")
-}
+function eleccion(jugada){
+     let resultado = ""   
+    if(jugada == 1){
+        resultado = "Piedra ✊🏻"
+    }
+    else if(jugada == 2){
+        resultado = "Papel ✋🏻"
+    }
+    else if(jugada == 3){
+        resultado = "Tijera ✌🏻"
+    }
+    else{
+        resultado = "Mal elegido"
+    }
+    return resultado
+
 }
 function combate(){
 // Combate
@@ -57,6 +49,6 @@ else if(jugador == 3 && pc == 3){
 }
 }
 
-eleccionjug()
-eleccionpc()
+alert("PC elige: " + eleccion(pc))
+alert("Tu eliges: " + eleccion(jugador))
 combate()
