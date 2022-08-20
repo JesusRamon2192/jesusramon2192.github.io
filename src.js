@@ -58,20 +58,20 @@ function combate(){
 }
 
 for(i=0; i<3; i++){
-jugador = prompt("Elije: \n 1 para piedra ✊🏻 \n 2 para papel ✋🏻 \n 3 para tijera ✌🏻");
-pc = aleatoriedad(1, 3);
-alert("Tu eliges: " + eleccion(jugador))
-alert("PC elige: " + eleccion(pc))
-combate()
+    jugador = prompt("Piedra, papel o tijera \n Elije: \n 1 para piedra ✊🏻 \n 2 para papel ✋🏻 \n 3 para tijera ✌🏻");
+    pc = aleatoriedad(1, 3);
+    alert("Tu eliges: " + eleccion(jugador))
+    alert("PC elige: " + eleccion(pc))
+    combate()
 }
 if(jugadorPuntos > pcPuntos){
-    alert("Ganaste la partida")
-}
-else if(jugadorPuntos == pcPuntos){
-    alert("Perdiste la partida")
-}
-else{
-    alert("Perdiste la partida")
+        alert("Ganaste la partida")
+    }
+    else if(jugadorPuntos == pcPuntos){
+        alert("Perdiste la partida")
+    }
+    else{
+        alert("Perdiste la partida")
 }
 
-console.log("Jugador = " + jugadorPuntos,"PC = " + pcPuntos)
+alert("Resultado \n Jugador = " + jugadorPuntos + "puntos\n","PC = " + pcPuntos + "puntos")
